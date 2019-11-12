@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:textColor="#9C27B0"
+        android:textColorHint="#A995AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColor="#9C27B0"
+        android:textColorHint="#A59FAC"
+        app:layout_constraintEnd_toEndOf="@+id/etUserName"
+        app:layout_constraintStart_toStartOf="@+id/etUserName"
+        app:layout_constraintTop_toBottomOf="@+id/etUserName" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#9C27B0"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#C6FF00"
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#9C27B0"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#C6FF00"
+        app:layout_constraintEnd_toEndOf="@+id/btLogin"
+        app:layout_constraintStart_toStartOf="@+id/btLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btLogin" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Login / Register"
+        android:textColor="#9C27B0"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Enter User"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/btRegister"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btRegister"
+        app:layout_constraintTop_toBottomOf="@+id/btRegister" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#9C27B0"
+        android:text="Add"
+        android:textColor="#C6FF00"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/tvCredential"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#C51162"
+        android:padding="10dp"
+        android:text="One Input False"
+        android:textAlignment="center"
+        android:textColor="#FFD600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
